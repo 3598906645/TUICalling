@@ -21,6 +21,9 @@ public class CallModel implements Cloneable, Serializable {
     public static String KEY_CMD         = "cmd";
     public static String KEY_USERIDS     = "userIDs";
     public static String KEY_MESSAGE     = "message";
+    public static String KEY_CALLACTION  = "call_action";
+    public static String KEY_CALLID      = "callid";
+    public static String KEY_USER        = "user";
 
     public static final int    VALUE_VERSION             = 4;
     public static final String VALUE_BUSINESS_ID         = "av_call";           //calling场景
@@ -143,6 +146,7 @@ public class CallModel implements Cloneable, Serializable {
     // 超时时间，单位秒
     public int    timeout;
     public String data;
+    public String user;
 
     @Override
     public Object clone() {
